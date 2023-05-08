@@ -1,0 +1,19 @@
+.wrapper {
+	@apply grid min-h-screen grid-cols-[auto_300px_minmax(320px,_1200px)_auto] grid-rows-[auto_1fr] dark:bg-black;
+
+	grid-template-areas:
+		'. header header .'
+		'. sidebar body .';
+}
+
+.header {
+	grid-area: header;
+}
+
+.sidebar {
+	grid-area: sidebar;
+}
+
+.body {
+	grid-area: body;
+}
