@@ -38,8 +38,8 @@ const sizes: Record<Variant, string> = {
   h5: "text-h5Mobile sm:text-h5Tablet md:text-h5",
   h6: "text-h6Mobile sm:text-h6Tablet md:text-h6",
   body: "text-body",
-  "body-small": "caption",
-  small: "footnote"
+  "body-small": "text-caption",
+  small: "text-footnote"
 };
 
 export const Typography: React.FC<TypographyProps> = ({
