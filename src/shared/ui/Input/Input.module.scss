@@ -1,0 +1,39 @@
+.input {
+	@apply flex flex-col min-w-[350px] relative;
+
+	input {
+		@apply w-[100%] 
+		h-[48px] 
+		pt-[14px] 
+		pr-[16px] 
+		pb-0 
+		pl-[10px] 
+		outline-0 
+		border-none 
+		rounded
+		bg-gray
+		transition-all 
+		duration-200
+		ease-out
+		
+		focus:bg-gray25
+		hover:bg-gray25;
+	}
+
+	label {
+		@apply top-[26px]
+		left-3 
+		absolute 
+		pointer-events-none 
+		transition-all 
+		duration-300
+		ease-out 
+		origin-top-left
+		
+		;
+	}
+}
+
+.activeLabel {
+	@apply translate-y-[-26px] scale-75;
+}
